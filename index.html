@@ -4,13 +4,17 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
  <link rel="stylesheet" href="./css/style.css">
  <title>AdPage</title>
 </head>
 <body>
  <div class="hide-elements">
+
  <nav class="navigation">
   <p class="nav-title">AdPage</p>
+  <div class="menu-icon"><img src="./images/menu-icon.png" alt=""></div>
   <ul class="nav-list">
    <li class="nav-list-item">Kim jesteśmy?</li>
    <li class="nav-list-item">Oferta</li>
@@ -40,7 +44,7 @@
    </p>
 
    <div class="about-image">
-    <img src="./images/about.png" alt="">
+    <img src="./images/about.png" alt="" class="image-about">
    </div>
 
   </div>
@@ -60,17 +64,17 @@
   <div class="ofert-line"></div>
   
   <div class="oferts-all">
+    <img src="./images/rwd.png" alt="" class="rwd">
+    <img src="./images/coin.png" alt="" class="coin">
+    <img src="./images/laptop-tablet.png" alt="" class="laptop-tablet">
 
   <div class="ofert-wrap">
+
    <div class="ofert-box">
     <p class="ofert-title">Projektowanie stron internetowych</p>
     <p class="ofert-desc">Przygotojemy dla Ciebie cały projekt, oraz następnie wprowadzimy ten projekt w życie.</p>
    </div>
   </div>
-
-
-   <img src="./images/rwd.png" alt="" class="responsive">
-
   <div class="ofert-wrap">
    <div class="ofert-box">
     <p class="ofert-title">Responsywność</p>
@@ -95,7 +99,6 @@
     <p class="ofert-desc">Wykupimy domenę i zrobimy to tak abyś Ty już niczym nie musiał się martwić.</p>
    </div>
   </div>
-  <img src="./images/coin.png" alt="" class="coin">
   <div class="ofert-wrap">
    <div class="ofert-box">
     <p class="ofert-title">Hosting</p>
@@ -104,6 +107,92 @@
   </div>
  </div>
  </section>
+
+ <section class="how-it-works">
+     <span class="dark-back"></span>
+    <div class="section-title">
+        <p class="title">Jak to działa</p>
+        <span class="title-line one"></span>
+        <span class="title-line two"></span>
+    </div>
+
+       <img src="./images/social.png" alt="" class="social">
+
+    <div class="step">
+        <p class="step-name">Skontaktuj się z nami</p>
+        <span class="title-line two"></span>
+    </div>
+    <div class="step">
+        <p class="step-name">Omówimy projekt</p>
+        <span class="title-line two"></span>
+    </div>
+    <div class="step">
+        <p class="step-name">Wycena</p>
+        <span class="title-line two"></span>
+    </div>
+    <div class="step">
+        <p class="step-name">Tworzenie strony</p>
+        <span class="title-line two"></span>
+    </div>
+    <div class="step">
+        <p class="step-name">Testy</p>
+        <span class="title-line two"></span>
+    </div>
+    <div class="step">
+        <p class="step-name">Radość&nbsp;z&nbsp;zaistnienia w&nbsp;sieci!</p>
+        <span class="title-line two"></span>
+    </div>
+ </section>
+
+ <section class="opinions">
+    <div class="section-title">
+        <p class="title">Opinie</p>
+        <span class="title-line one"></span>
+        <span class="title-line two"></span>
+    </div>
+
+    <div class="opinions-box">
+        <div class="opinion">
+            <p class="opinion-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vero sapiente at numquam dolorem officiis animi reprehenderit. Ipsum vel inventore tempore atque ut facere nostrum. Adipisci beatae nihil illo cumque.
+            Velit libero tempora autem blanditiis. Hic, tenetur! Sit quas magnam quaerat delectus unde minus doloribus blanditiis! Facilis, sunt cupiditate fugit repudiandae officiis unde reiciendis aspernatur esse eligendi, distinctio, ad ea.
+            Aliquam, ea blanditiis. Ab itaque repudiandae, ipsum aperiam deserunt officia modi fuga fugit amet debitis aspernatur aliquam consectetur blanditiis unde minima sunt, harum commodi in dolorem dicta alias doloremque quae?</p>
+            <p class="opinion-author">Tomek sasd</p>
+        </div>
+    </div>
+ </section>
+
+ <section class="form">
+    <div class="section-title">
+        <p class="title">Daj sobie szansę i zaistniej w sieci z nami!</p>
+        <span class="title-line one"></span>
+        <span class="title-line two"></span>
+    </div>
+
+    <div class="form-box">
+        <form action="">
+            <input type="text" class="fullname" placeholder="Imię i nazwisko...">
+            <input type="email" class="email" placeholder="E-mail...">
+            <textarea name="message" id="" placeholder="Czego potrzebujesz?" class="message"></textarea>
+        </form>
+    </div>
+ </section>
+
+ <footer class="footer">
+     <div class="company">
+         <p class="company-name">AdPage</p>
+     </div>
+
+     <div class="contact">
+         <p>mailtestowy@gmail.com</p>
+         <p>tel. 111-222-333</p>
+     </div>
+
+     <div class="media-icons">
+         <div class="fb"><img src="./images/fb.png" alt=""></div>
+         <div class="insta"><img src="./images/insta.png" alt=""></div>
+     </div>
+ </footer>
+
 </div>
  <script src="./js/main.js"></script>
 </body>
