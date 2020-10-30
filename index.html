@@ -6,6 +6,10 @@
  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <link rel="stylesheet" href="./css/style.css">
  <title>AdPage</title>
 </head>
@@ -14,12 +18,12 @@
 
  <nav class="navigation">
   <p class="nav-title">AdPage</p>
-  <div class="menu-icon"><img src="./images/menu-icon.png" alt=""></div>
+  <div class="menu-icon active"><img src="./images/menu-icon.png" alt=""></div>
   <ul class="nav-list">
-   <li class="nav-list-item">Kim jesteśmy?</li>
-   <li class="nav-list-item">Oferta</li>
-   <li class="nav-list-item">Opinie</li>
-   <li class="nav-list-item">Kontakt</li>
+   <li class="nav-list-item" data-section-name = 'about'>Kim jesteśmy?</li>
+   <li class="nav-list-item" data-section-name = 'ofert'>Oferta</li>
+   <li class="nav-list-item" data-section-name = 'opinions'>Opinie</li>
+   <li class="nav-list-item" data-section-name = 'form'>Sprawdź nas!</li>
   </ul>
  </nav>
 
@@ -27,19 +31,19 @@
   <div class="black-box">
    <div style="height: 45%; overflow: hidden; width:100%" id='header-wave'><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-8.17,97.20 C142.49,-161.34 456.26,223.52 501.41,84.38 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0b9ed9;"></path></svg></div>
 
-   <h2 class="header-slogan">Pozwól się znaleźć innym!</h2>
+   <h2 class="header-slogan animate__animated animate__fadeInLeft">Pozwól się znaleźć innym!</h2>
   </div>
  </header>
 
- <section class="about">
-  <div class="section-title">
+ <section class="about" data-section-name = 'about'>
+  <div class="section-title animate__animated">
    <p class="title">Kim jesteśmy?</p>
    <span class="title-line one"></span>
    <span class="title-line two"></span>
   </div>
 
   <div class="about-desc-box">
-   <p class="about-desc">
+   <p class="about-desc animate__animated">
     Profesjonaliści, którzy potrafią poradzić sobie z każdym wyzwaniem. Zdobyte doświadczenie potrafimy przekształcić w sprawne i skuteczne działanie na rynku tak, aby każdy klient był w pełni zadowolony. W tworzenie każdej strony internetowej, która zostanie nam powierzona wkładamy maksimum zaangażowania i naszej wiedzy by efekt był jak najlepszy!
    </p>
 
@@ -54,8 +58,8 @@
   <img src="./images/break.png" alt="">
  </div>
 
- <section class="ofert">
-  <div class="section-title">
+ <section class="ofert" data-section-name = 'ofert'>
+  <div class="section-title animate__animated">
    <p class="title">Co oferujemy?</p>
    <span class="title-line one"></span>
    <span class="title-line two"></span>
@@ -68,38 +72,38 @@
     <img src="./images/coin.png" alt="" class="coin">
     <img src="./images/laptop-tablet.png" alt="" class="laptop-tablet">
 
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
 
-   <div class="ofert-box">
+   <div class="ofert-box ">
     <p class="ofert-title">Projektowanie stron internetowych</p>
     <p class="ofert-desc">Przygotojemy dla Ciebie cały projekt, oraz następnie wprowadzimy ten projekt w życie.</p>
    </div>
   </div>
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
    <div class="ofert-box">
     <p class="ofert-title">Responsywność</p>
     <p class="ofert-desc">Strony zdubowane przez nas będą wspaniale prezentować się na każdym rodzaju urządzenia</p>
    </div>
   </div>
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
    <div class="ofert-box">
     <p class="ofert-title">Modernizacja stron</p>
     <p class="ofert-desc">Potrzebujesz odświeżyć swoją stronę? Przestał Ci się podobać jej wygląd? Z chęcią zmienimy ją dla Ciebie!</p>
    </div>
   </div>
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
    <div class="ofert-box">
     <p class="ofert-title">Pozycjonowanie</p>
     <p class="ofert-desc">Twoja strona będzie wyświetlała się jak najwyżej w wyszukiwarkach tak aby każdy mógł ją znaleźć.</p>
    </div>
   </div>
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
    <div class="ofert-box">
     <p class="ofert-title">Domena</p>
     <p class="ofert-desc">Wykupimy domenę i zrobimy to tak abyś Ty już niczym nie musiał się martwić.</p>
    </div>
   </div>
-  <div class="ofert-wrap">
+  <div class="ofert-wrap animate__animated">
    <div class="ofert-box">
     <p class="ofert-title">Hosting</p>
     <p class="ofert-desc">Utrzymamy Twoją stronę i będziemy się nią opiekować żeby działała nienagannie.</p>
@@ -110,7 +114,7 @@
 
  <section class="how-it-works">
      <span class="dark-back"></span>
-    <div class="section-title">
+    <div class="section-title animate__animated">
         <p class="title">Jak to działa</p>
         <span class="title-line one"></span>
         <span class="title-line two"></span>
@@ -118,51 +122,88 @@
 
        <img src="./images/social.png" alt="" class="social">
 
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Skontaktuj się z nami</p>
         <span class="title-line two"></span>
     </div>
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Omówimy projekt</p>
         <span class="title-line two"></span>
     </div>
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Wycena</p>
         <span class="title-line two"></span>
     </div>
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Tworzenie strony</p>
         <span class="title-line two"></span>
     </div>
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Testy</p>
         <span class="title-line two"></span>
     </div>
-    <div class="step">
+    <div class="step animate__animated">
         <p class="step-name">Radość&nbsp;z&nbsp;zaistnienia w&nbsp;sieci!</p>
         <span class="title-line two"></span>
     </div>
  </section>
 
- <section class="opinions">
-    <div class="section-title">
+ <section class="opinions" data-section-name = 'opinions'>
+    <div class="section-title animate__animated">
         <p class="title">Opinie</p>
         <span class="title-line one"></span>
         <span class="title-line two"></span>
     </div>
 
-    <div class="opinions-box">
+    <div class="opinions-box animate__animated">
         <div class="opinion">
             <p class="opinion-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vero sapiente at numquam dolorem officiis animi reprehenderit. Ipsum vel inventore tempore atque ut facere nostrum. Adipisci beatae nihil illo cumque.
             Velit libero tempora autem blanditiis. Hic, tenetur! Sit quas magnam quaerat delectus unde minus doloribus blanditiis! Facilis, sunt cupiditate fugit repudiandae officiis unde reiciendis aspernatur esse eligendi, distinctio, ad ea.
             Aliquam, ea blanditiis. Ab itaque repudiandae, ipsum aperiam deserunt officia modi fuga fugit amet debitis aspernatur aliquam consectetur blanditiis unde minima sunt, harum commodi in dolorem dicta alias doloremque quae?</p>
             <p class="opinion-author">Tomek sasd</p>
+            <div class="arrows">
+                <div class="arrow-left"><img src="./images/arrow.png" alt=""></div>
+                <div class="arrow-right"><img src="./images/arrow.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <p class="opinion-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vero sapiente at numquam dolorem officiis animi reprehenderit. Ipsum vel inventore tempore atque ut facere nostrum. Adipisci beatae nihil illo cumque.
+            Velit libero tempora autem blanditiis. Hic, tenetur! Sit quas magnam quaerat delectus unde minus doloribus blanditiis! Facilis, sunt cupiditate fugit repudiandae officiis unde reiciendis aspernatur esse eligendi, distinctio, ad ea.
+            Aliquam, ea blanditiis. Ab itaque repudiandae, ipsum aperiam deserunt officia modi fuga fugit amet debitis aspernatur aliquam consectetur blanditiis unde minima sunt, harum commodi in dolorem dicta alias doloremque quae?</p>
+            <p class="opinion-author">Tomek saasdasdsd</p>
+            <div class="arrows">
+                <div class="arrow-left"><img src="./images/arrow.png" alt=""></div>
+                <div class="arrow-right"><img src="./images/arrow.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <p class="opinion-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vero sapiente at numquam dolorem officiis animi reprehenderit. Ipsum vel inventore tempore atque ut facere nostrum. Adipisci beatae nihil illo cumque.
+            Velit libero tempora autem blanditiis. Hic, tenetur! Sit quas magnam quaerat delectus unde minus doloribus blanditiis! Facilis, sunt cupiditate fugit repudiandae officiis unde reiciendis aspernatur esse eligendi, distinctio, ad ea.
+            Aliquam, ea blanditiis. Ab itaque repudiandae, ipsum aperiam deserunt officia modi fuga fugit amet debitis aspernatur aliquam consectetur blanditiis unde minima sunt, harum commodi in dolorem dicta alias doloremque quae?</p>
+            <p class="opinion-author">Tomek sasasdasdd</p>
+            <div class="arrows">
+                <div class="arrow-left"><img src="./images/arrow.png" alt=""></div>
+                <div class="arrow-right"><img src="./images/arrow.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="opinion">
+            <p class="opinion-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vero sapiente at numquam dolorem officiis animi reprehenderit. Ipsum vel inventore tempore atque ut facere nostrum. Adipisci beatae nihil illo cumque.
+            Velit libero tempora autem blanditiis. Hic, tenetur! Sit quas magnam quaerat delectus unde minus doloribus blanditiis! Facilis, sunt cupiditate fugit repudiandae officiis unde reiciendis aspernatur esse eligendi, distinctio, ad ea.
+            Aliquam, ea blanditiis. Ab itaque repudiandae, ipsum aperiam deserunt officia modi fuga fugit amet debitis aspernatur aliquam consectetur blanditiis unde minima sunt, harum commodi in dolorem dicta alias doloremque quae?</p>
+            <p class="opinion-author">Tomek sasasdasdd</p>
+            <div class="arrows">
+                <div class="arrow-left"><img src="./images/arrow.png" alt=""></div>
+                <div class="arrow-right"><img src="./images/arrow.png" alt=""></div>
+            </div>
         </div>
     </div>
  </section>
 
- <section class="form">
-    <div class="section-title">
+ <section class="form" data-section-name = 'form'>
+    <div class="section-title animate__animated">
         <p class="title">Daj sobie szansę i zaistniej w sieci z nami!</p>
         <span class="title-line one"></span>
         <span class="title-line two"></span>
@@ -185,6 +226,7 @@
      <div class="contact">
          <p>mailtestowy@gmail.com</p>
          <p>tel. 111-222-333</p>
+         <p>AdPage &copy; All Rights Reserved</p>
      </div>
 
      <div class="media-icons">
@@ -195,5 +237,6 @@
 
 </div>
  <script src="./js/main.js"></script>
+
 </body>
 </html>
