@@ -678,9 +678,17 @@ section{
         bottom:-250px;
     }
 
+    .opinions{
+        margin-bottom:0;
+    }
+
     .form .section-title .one,
     .form .section-title .two{
         width:85%
+    }
+
+    .form{
+        margin-top: 0;
     }
 
     .footer{
