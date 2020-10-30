@@ -488,6 +488,8 @@ section{
     }
 
     .menu-icon{
+        width:fit-content;
+        width:-moz-fit-content;
         display: block!important;
         cursor: pointer;
         transition: .2s;
@@ -731,8 +733,4 @@ section{
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-}
-
-.opinion.active{
-    opacity:1;
 }
